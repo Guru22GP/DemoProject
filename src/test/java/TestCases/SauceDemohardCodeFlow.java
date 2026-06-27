@@ -10,6 +10,7 @@ import java.time.Duration;
 
 public class SauceDemohardCodeFlow {
     public static void main(String[] args) throws InterruptedException {
+
         WebDriver driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
