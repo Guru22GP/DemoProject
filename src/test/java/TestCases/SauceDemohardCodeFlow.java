@@ -28,7 +28,7 @@ public class SauceDemohardCodeFlow {
         WebElement item1 = driver.findElement(By.xpath("//div[@class = 'inventory_item_description']/div/button[@id='add-to-cart-sauce-labs-onesie']"));
         item1.click();
 
-        WebElement item2=driver.findElement(By.xpath("//div[@class = 'inventory_item_description']/div/button[@id='add-to-cart-sauce-labs-bike-light']"));
+        WebElement item2 = driver.findElement(By.xpath("//div[@class = 'inventory_item_description']/div/button[@id='add-to-cart-sauce-labs-bike-light']"));
         item2.click();
 
         WebElement addToCart = driver.findElement(By.xpath("//a[@class='shopping_cart_link']"));

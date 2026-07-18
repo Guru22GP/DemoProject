@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <listeners>
+        <listener class-name="ListenerUtility.ListenerImplementation"/>
+    </listeners>
+
+    <test name="RegressionTests">
+        <parameter name="BROWSER" value="Chrome"/>
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="TestCases.AddToCart2"/>
+            <class name="TestCases.AddLowestItemToCart2"/>
+        </classes>
+    </test>
+
+</suite>

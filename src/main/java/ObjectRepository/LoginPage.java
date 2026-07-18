@@ -8,10 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 
-    public  LoginPage(WebDriver driver){
-        PageFactory.initElements(driver, this);
-    }
-
    @FindAll({@FindBy(id="user-name"),@FindBy(name = "user-name")}) // Autoheal
    private WebElement un;
 
@@ -20,6 +16,12 @@ public class LoginPage {
 
     @FindBy(id= "login-button")
     private WebElement loginButton;
+
+    public  LoginPage(WebDriver driver)
+    {
+        PageFactory.initElements(driver, this);
+    }
+
 
     public WebElement getUn() {
         return un;

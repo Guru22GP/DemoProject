@@ -11,7 +11,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
-import org.openqa.selenium.support.ui.Select;
 
 public class AddLowestItemToCart {
 
@@ -58,12 +57,7 @@ public class AddLowestItemToCart {
 
         pp.getProdname1().getText();
         pp.getProdname1().click();
-
         pp.getAddToCartButton().click();
-
-
-
-
 
     }
 }

@@ -11,6 +11,9 @@ public class InvoCount {
         WebDriver driver = new FirefoxDriver();
         Thread.sleep(2000);
 
+        driver.get("https://www.amazon.com/");
+
+
         driver.quit();
 
     }
